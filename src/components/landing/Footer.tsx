@@ -1,7 +1,7 @@
 export function Footer() {
   return (
-    <footer className="bg-brand-black border-t border-white/10 py-6">
-      <div className="container-1200 flex flex-col sm:flex-row items-center justify-between gap-4">
+    <footer className="bg-brand-black border-t border-white/10">
+      <div className="container-1200 flex flex-col sm:flex-row items-center justify-between gap-4 py-12 pb-[60px]">
         <div className="flex items-center gap-3">
           <svg width="62" height="15" viewBox="0 0 62 15" fill="none">
             <path d="M0 14L7 0L14 14H10.5L7 6.5L3.5 14H0Z" fill="#EB1000"/>
