@@ -2,15 +2,15 @@ import { CtaButton } from "./CtaButton";
 
 export function BottomCTA() {
   return (
-    <section className="cta-dark-bg py-24 lg:py-28 text-center">
+    <section className="cta-dark-bg pt-[90px] pb-[140px] text-center">
       <div className="container-1200">
-        <h2 className="text-white font-black uppercase tracking-[0.04em] text-[28px] sm:text-[36px] leading-[1.15] max-w-3xl mx-auto">
+        <h2 className="text-white font-semibold uppercase tracking-[-1.84px] text-[46px] leading-[100%] max-w-3xl mx-auto max-xl:text-[36px] max-xl:tracking-[-1.44px]">
           Analyze competitor traffic now
         </h2>
-        <p className="mt-5 text-[16px] text-white/75 max-w-[560px] mx-auto leading-relaxed">
+        <p className="mt-6 text-[24px] font-medium leading-[120%] tracking-[-0.48px] text-white/75 max-w-[800px] mx-auto max-lg:text-[18px]">
           Uncover the channels, pages, and patterns driving their growth — and use those insights to fuel your own.
         </p>
-        <div className="mt-8 flex justify-center">
+        <div className="mt-6 flex justify-center">
           <CtaButton>Try free for 7 days</CtaButton>
         </div>
       </div>

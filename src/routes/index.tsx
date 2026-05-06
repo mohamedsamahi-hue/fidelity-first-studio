@@ -36,7 +36,7 @@ function Index() {
           "Spot time-critical shifts before your competitors react",
         ]}
         image={<TrafficTrendImg />}
-        bgClass="bg-bg-teal"
+        bgClass="bg-core-mint"
       />
       <FeatureBlock
         title="Uncover where competitors win their traffic"
@@ -46,7 +46,7 @@ function Index() {
           "Use competitor insights to strengthen your own channel mix",
         ]}
         image={<AiTrafficImg />}
-        bgClass="bg-bg-lavender"
+        bgClass="bg-lavender-light"
         reversed
       />
       <FeatureBlock

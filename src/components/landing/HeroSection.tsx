@@ -4,25 +4,33 @@ import { HeroMockup } from "./HeroMockup";
 
 export function HeroSection() {
   return (
-    <section className="hero-gradient pt-10 pb-20 lg:pb-24">
-      <div className="container-1200">
-        <div className="pt-2 pb-12">
+    <section className="hero-gradient pt-0 pb-[96px] relative">
+      <div className="container-1200 relative z-[1]">
+        <div className="py-[26px]">
           <SemrushLogo />
         </div>
-        <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
-          <div>
-            <h1 className="text-[44px] sm:text-[52px] lg:text-[60px] leading-[1.05] font-black tracking-tight text-brand-black">
+        <div className="mt-[87px] flex items-center justify-between gap-3 max-lg:flex-col max-lg:mt-10 max-lg:gap-[50px] max-lg:text-center">
+          <div className="w-full max-w-[580px]">
+            <h1 className="text-[64px] font-semibold leading-[110%] tracking-[-2.56px] text-brand-black max-xl:text-[56px] max-xl:tracking-[-1.6px] max-sm:text-[40px]">
               Analyze your competitors' website traffic
             </h1>
-            <p className="mt-6 text-[18px] leading-relaxed text-text-secondary max-w-[460px]">
+            <p className="mt-6 text-[24px] font-medium leading-[120%] tracking-[-0.48px] text-core-dark-grey max-w-[460px] max-lg:mx-auto max-lg:text-[18px]">
               Break down any website's performance across channels, pages, and regions — then beat them at their own game.
             </p>
             <div className="mt-8">
               <CtaButton>Try free for 7 days</CtaButton>
-              <p className="mt-3 text-[13px] text-text-secondary">Unlimited access to all Traffic &amp; Market tools</p>
+              <p className="mt-4 text-[14px] font-medium leading-[150%] tracking-[-0.28px] text-core-dark-grey">
+                Unlimited access to all Traffic &amp; Market tools
+              </p>
             </div>
           </div>
-          <div className="lg:pl-8"><HeroMockup /></div>
+          <div className="w-full max-w-[680px] max-xl:max-w-[600px] max-lg:max-w-[710px]">
+            <div className="rounded-[12px] border-[1.3px] border-white bg-[linear-gradient(0deg,rgba(108,110,121,0.1)_0%,rgba(209,210,213,0.1)_100%)] backdrop-blur-[26px] p-3">
+              <div className="bg-white rounded-[6px] overflow-hidden">
+                <HeroMockup />
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </section>

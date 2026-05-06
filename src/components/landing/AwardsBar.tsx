@@ -18,13 +18,13 @@ function Badge() {
 
 export function AwardsBar() {
   return (
-    <section className="bg-brand-black py-10">
+    <section className="bg-brand-black py-12">
       <div className="container-1200">
-        <div className="flex flex-wrap justify-center items-start gap-x-12 gap-y-6">
+        <div className="grid grid-cols-5 gap-3 max-lg:grid-cols-2 max-sm:grid-cols-1">
           {awards.map((label) => (
-            <div key={label} className="flex flex-col items-center gap-2 max-w-[140px]">
+            <div key={label} className="flex items-start gap-3 py-[22px] pr-[14px] text-left">
               <Badge />
-              <span className="text-[11px] text-white text-center leading-tight">{label}</span>
+              <span className="text-[14px] font-semibold leading-[100%] uppercase text-white">{label}</span>
             </div>
           ))}
         </div>

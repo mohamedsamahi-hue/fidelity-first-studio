@@ -59,22 +59,26 @@ export function BenchmarkTable() {
   const [active, setActive] = useState("Education");
   const rows = data[active];
   return (
-    <section className="bg-white py-20 lg:py-24">
+    <section className="bg-white pt-[120px] pb-[60px] text-left">
       <div className="container-1200">
-        <h2 className="text-center font-black uppercase tracking-[0.04em] text-[28px] sm:text-[34px] leading-[1.15] text-brand-black max-w-3xl mx-auto">
-          Benchmark your website against industry leaders
-        </h2>
-        <p className="text-center mt-3 text-[16px] text-text-secondary">Get a full analysis for any website.</p>
+        <div className="text-center mb-[90px]">
+          <h2 className="font-semibold uppercase tracking-[-1.84px] text-[46px] leading-[100%] text-brand-black max-xl:text-[36px] max-xl:tracking-[-1.44px]">
+            Benchmark your website against industry leaders
+          </h2>
+          <p className="mt-8 text-[18px] font-medium leading-[150%] tracking-[-0.36px] text-core-dark-grey">
+            Get a full analysis for any website.
+          </p>
+        </div>
 
-        <div className="mt-10 flex flex-wrap justify-center gap-2">
+        <div className="flex flex-wrap gap-x-2 gap-y-3 mb-8">
           {tabs.map((t) => {
             const isActive = t === active;
             return (
               <button
                 key={t}
                 onClick={() => setActive(t)}
-                className={`rounded-full px-[18px] py-[7px] text-sm font-medium transition-colors border-[1.5px]
-                  ${isActive ? "bg-white border-brand-black text-brand-black" : "bg-transparent border-tab-border text-text-muted hover:text-brand-black"}`}
+                className={`rounded-[30px] px-5 pt-2 pb-[6px] font-factor text-[14px] font-medium leading-[150%] transition-colors duration-300 border cursor-pointer
+                  ${isActive ? "bg-lavender border-lavender text-brand-black" : "bg-white border-brand-black text-brand-black hover:bg-lavender hover:border-lavender"}`}
               >
                 {t}
               </button>
@@ -82,40 +86,40 @@ export function BenchmarkTable() {
           })}
         </div>
 
-        <div className="mt-8 overflow-x-auto">
-          <table className="w-full text-left">
+        <div className="border border-border-table rounded-[6px] p-8 overflow-x-auto">
+          <table className="w-full">
             <thead>
-              <tr className="bg-bg-gray text-text-muted uppercase text-[12px] tracking-[0.08em]">
-                <th className="px-4 py-3 font-medium">Domain</th>
-                <th className="px-4 py-3 font-medium">Visits</th>
-                <th className="px-4 py-3 font-medium">Desktop Share</th>
-                <th className="px-4 py-3 font-medium">MoM</th>
-                <th className="px-4 py-3 font-medium">YoY</th>
-                <th className="px-4 py-3 font-medium">Main Traffic Source</th>
+              <tr className="border-b border-border-table">
+                <th className="text-left text-[21px] font-semibold leading-[150%] tracking-[-0.32px] px-[10px] py-[14px] pl-0">Domain</th>
+                <th className="text-right text-[21px] font-semibold leading-[150%] tracking-[-0.32px] px-[10px] py-[14px] min-w-[155px]">Visits</th>
+                <th className="text-right text-[21px] font-semibold leading-[150%] tracking-[-0.32px] px-[10px] py-[14px] min-w-[218px]">Desktop Share</th>
+                <th className="text-right text-[21px] font-semibold leading-[150%] tracking-[-0.32px] px-[10px] py-[14px] min-w-[155px]">MoM</th>
+                <th className="text-right text-[21px] font-semibold leading-[150%] tracking-[-0.32px] px-[10px] py-[14px] min-w-[155px]">YoY</th>
+                <th className="text-right text-[21px] font-semibold leading-[150%] tracking-[-0.32px] px-[10px] py-[14px] min-w-[218px] pr-0">Main Traffic Source</th>
               </tr>
             </thead>
             <tbody>
-              {rows.map((r) => (
-                <tr key={r.domain} className="border-b border-border-soft h-[52px] text-sm">
-                  <td className="px-4 py-3">
-                    <a href="#" className="text-brand-black hover:text-brand-orange hover:underline font-medium">{r.domain}</a>
+              {rows.map((r, i) => (
+                <tr key={r.domain} className={`${i < rows.length - 1 ? "border-b border-border-table" : ""}`}>
+                  <td className="text-left px-[10px] py-[14px] pl-0">
+                    <span className="font-medium text-[16px] tracking-[-0.32px] text-brand-black">{r.domain}</span>
                   </td>
-                  <td className="px-4 py-3">
-                    <div className="flex flex-col"><span className="text-text-muted text-xs">{r.visits.sub}</span><span className="text-brand-black">{r.visits.main}</span></div>
+                  <td className="text-right px-[10px] py-[14px] text-[16px]">
+                    <div className="flex flex-col items-end"><span className="text-text-disabled text-xs">{r.visits.sub}</span><span className="text-brand-black">{r.visits.main}</span></div>
                   </td>
-                  <td className="px-4 py-3">
-                    <div className="flex flex-col"><span className="text-text-muted text-xs">{r.desktop.sub}</span><span className="text-brand-black">{r.desktop.main}</span></div>
+                  <td className="text-right px-[10px] py-[14px] text-[16px]">
+                    <div className="flex flex-col items-end"><span className="text-text-disabled text-xs">{r.desktop.sub}</span><span className="text-brand-black">{r.desktop.main}</span></div>
                   </td>
-                  <td className="px-4 py-3"><Trend value={r.mom} /></td>
-                  <td className="px-4 py-3"><Trend value={r.yoy} /></td>
-                  <td className="px-4 py-3 text-brand-black">{r.source}</td>
+                  <td className="text-right px-[10px] py-[14px]"><Trend value={r.mom} /></td>
+                  <td className="text-right px-[10px] py-[14px]"><Trend value={r.yoy} /></td>
+                  <td className="text-right px-[10px] py-[14px] pr-0 text-brand-black text-[16px]">{r.source}</td>
                 </tr>
               ))}
             </tbody>
           </table>
         </div>
 
-        <div className="mt-10 flex justify-center">
+        <div className="flex justify-center mt-8">
           <CtaButton variant="black">Try free for 7 days</CtaButton>
         </div>
       </div>

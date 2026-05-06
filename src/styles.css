@@ -4,28 +4,79 @@
 
 @custom-variant dark (&:is(.dark *));
 
+@font-face {
+  font-family: 'Lazzer';
+  src: url('https://static.semrush.com/file/fonts/lazzer/Lazzer-Regular.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Lazzer';
+  src: url('https://static.semrush.com/file/fonts/lazzer/Lazzer-Medium.woff') format('woff');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Lazzer';
+  src: url('https://static.semrush.com/file/fonts/lazzer/Lazzer-SemiBold.woff') format('woff');
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Lazzer';
+  src: url('https://static.semrush.com/file/fonts/lazzer/Lazzer-Bold.woff') format('woff');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Lazzer';
+  src: url('https://static.semrush.com/file/fonts/lazzer/Lazzer-Heavy.woff') format('woff');
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+
 @theme inline {
-  --font-sans: "DM Sans", "Inter", system-ui, sans-serif;
+  --font-sans: "Lazzer", Arial, sans-serif;
+  --font-factor: "Factor", Arial, sans-serif;
 
   --color-background: var(--background);
   --color-foreground: var(--foreground);
   --color-brand-black: #181E15;
   --color-brand-orange: #FF642D;
-  --color-bg-gray: #F5F5F7;
-  --color-bg-lavender: #F3F0FF;
-  --color-bg-teal: #EBF5F3;
+  --color-brand-orange-hover: #F24500;
+  --color-lavender: #C190FF;
+  --color-lavender-light: #E0C7FF;
+  --color-core-mint: #DCEEEB;
+  --color-core-dark-grey: #747873;
+  --color-core-light-grey: #F3F6F6;
+  --color-accent-aqua: #18F0BF;
+  --color-sage: #C0C4AC;
+  --color-purple: #421983;
+  --color-bg-gray: #F6F7F8;
+  --color-bg-lavender: #E0C7FF;
+  --color-bg-teal: #DCEEEB;
   --color-bg-blue: #EFF7FE;
   --color-cta-dark: #0D1117;
   --color-teal-accent: #00BFA5;
-  --color-text-secondary: #555555;
-  --color-text-muted: #9EA5B4;
+  --color-text-secondary: #747873;
+  --color-text-muted: #575C66;
   --color-text-disabled: #B5BAC4;
   --color-positive: #11AA88;
   --color-negative: #FF5454;
-  --color-border-soft: #EAEAEA;
-  --color-tab-border: #E0E0E0;
+  --color-border-soft: #D1D4DB;
+  --color-border-table: #D1D2D5;
+  --color-tab-border: #181E15;
   --color-silver: #C0C4AC;
   --color-adobe-red: #EB1000;
+  --color-accent-green: #C7FA73;
+  --color-accent-blue: #6EDBFF;
+  --color-intense-emerald: #00BC98;
+  --color-grey-stroke: #D1D4DB;
 
   --color-card: var(--card);
   --color-card-foreground: var(--card-foreground);
@@ -86,27 +137,23 @@
 
 @layer utilities {
   .container-1200 {
-    max-width: 1200px;
+    width: 100%;
+    max-width: 1440px;
     margin-left: auto;
     margin-right: auto;
-    padding-left: 24px;
-    padding-right: 24px;
+    padding-left: 16px;
+    padding-right: 16px;
   }
-  @media (min-width: 768px) {
-    .container-1200 { padding-left: 40px; padding-right: 40px; }
+  @media (min-width: 1024px) {
+    .container-1200 { padding-left: 32px; padding-right: 32px; }
   }
 
   .hero-gradient {
-    background:
-      radial-gradient(ellipse 80% 60% at 100% 30%, #E0D4FF 0%, transparent 60%),
-      radial-gradient(ellipse 60% 50% at 90% 70%, #FFCFDB 0%, transparent 55%),
-      linear-gradient(135deg, #EAFBF1 0%, #F0F2FF 50%, #F8E6F0 100%);
+    background: linear-gradient(180deg, #DCEEEB 0%, #E8E1FF 75%, #FFF 130%);
   }
 
   .cta-dark-bg {
-    background:
-      radial-gradient(ellipse 60% 80% at 90% 100%, #00BFA5 0%, transparent 55%),
-      #0D1117;
+    background: #181E15;
   }
 
   .fade-up {
