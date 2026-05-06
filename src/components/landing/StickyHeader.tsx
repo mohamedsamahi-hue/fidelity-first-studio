@@ -11,12 +11,14 @@ export function StickyHeader() {
   }, []);
   return (
     <header
-      className={`fixed top-0 left-0 right-0 z-50 bg-white border-b border-border-soft transition-all duration-300
-        ${active ? "translate-y-0 opacity-100 shadow-[0_2px_12px_rgba(0,0,0,0.08)]" : "-translate-y-full opacity-0"}`}
+      className={`fixed left-0 right-0 z-[1000] bg-core-mint py-[10px] transition-all duration-300
+        ${active ? "top-0" : "top-[-90px]"}`}
     >
-      <div className="container-1200 flex items-center justify-between h-[60px]">
+      <div className="container-1200 flex items-center justify-between">
         <SemrushLogo />
-        <CtaButton className="!py-2 !px-6 text-sm">Try free for 7 days</CtaButton>
+        <CtaButton variant="black" className="!h-[53px] !min-h-[53px] !text-[14px] !tracking-[-0.28px]">
+          Try free for 7 days
+        </CtaButton>
       </div>
     </header>
   );
