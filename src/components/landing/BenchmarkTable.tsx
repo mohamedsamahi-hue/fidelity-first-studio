@@ -38,7 +38,7 @@ const data: Record<string, Row[]> = {
   "Software & Development": [
     { domain: "codehub.com", visits: { sub: "1.2%", main: "510M" }, desktop: { sub: "78%", main: "397M" }, mom: 3.4, yoy: 14.2, source: "Direct" },
     { domain: "devoverflow.com", visits: { sub: "0.8%", main: "318M" }, desktop: { sub: "82%", main: "260M" }, mom: -2.4, yoy: -8.6, source: "Organic Search" },
-    { domain: "gitlab.com", visits: { sub: "0.2%", main: "62M" }, desktop: { sub: "75%", main: "46M" }, mom: 1.1, yoy: 4.2, source: "Direct" },
+    { domain: "repolab.com", visits: { sub: "0.2%", main: "62M" }, desktop: { sub: "75%", main: "46M" }, mom: 1.1, yoy: 4.2, source: "Direct" },
   ],
 };
 
