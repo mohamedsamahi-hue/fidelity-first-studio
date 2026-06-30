@@ -14,31 +14,31 @@ type Row = {
 
 const data: Record<string, Row[]> = {
   Education: [
-    { domain: "coursera.org", visits: { sub: "0.7%", main: "78.2M" }, desktop: { sub: "62%", main: "48.5M" }, mom: 4.2, yoy: 12.8, source: "Organic Search" },
-    { domain: "khanacademy.org", visits: { sub: "0.5%", main: "62.4M" }, desktop: { sub: "55%", main: "34.3M" }, mom: -1.1, yoy: 5.6, source: "Direct" },
-    { domain: "duolingo.com", visits: { sub: "1.1%", main: "120.8M" }, desktop: { sub: "30%", main: "36.2M" }, mom: 2.8, yoy: 18.4, source: "Direct" },
-    { domain: "udemy.com", visits: { sub: "0.4%", main: "55.1M" }, desktop: { sub: "70%", main: "38.6M" }, mom: -0.9, yoy: -3.2, source: "Organic Search" },
-    { domain: "edx.org", visits: { sub: "0.2%", main: "21.7M" }, desktop: { sub: "65%", main: "14.1M" }, mom: 1.4, yoy: null, source: "Referral" },
+    { domain: "learnova.org", visits: { sub: "0.7%", main: "78.2M" }, desktop: { sub: "62%", main: "48.5M" }, mom: 4.2, yoy: 12.8, source: "Organic Search" },
+    { domain: "skillarena.org", visits: { sub: "0.5%", main: "62.4M" }, desktop: { sub: "55%", main: "34.3M" }, mom: -1.1, yoy: 5.6, source: "Direct" },
+    { domain: "linguago.com", visits: { sub: "1.1%", main: "120.8M" }, desktop: { sub: "30%", main: "36.2M" }, mom: 2.8, yoy: 18.4, source: "Direct" },
+    { domain: "edumix.com", visits: { sub: "0.4%", main: "55.1M" }, desktop: { sub: "70%", main: "38.6M" }, mom: -0.9, yoy: -3.2, source: "Organic Search" },
+    { domain: "tutox.org", visits: { sub: "0.2%", main: "21.7M" }, desktop: { sub: "65%", main: "14.1M" }, mom: 1.4, yoy: null, source: "Referral" },
   ],
   Telecom: [
-    { domain: "verizon.com", visits: { sub: "0.6%", main: "94.2M" }, desktop: { sub: "58%", main: "54.6M" }, mom: 1.8, yoy: 6.2, source: "Direct" },
-    { domain: "att.com", visits: { sub: "0.5%", main: "82.5M" }, desktop: { sub: "60%", main: "49.5M" }, mom: -0.4, yoy: 3.1, source: "Direct" },
-    { domain: "t-mobile.com", visits: { sub: "0.4%", main: "68.9M" }, desktop: { sub: "52%", main: "35.8M" }, mom: 3.2, yoy: 9.6, source: "Organic Search" },
+    { domain: "horizen.com", visits: { sub: "0.6%", main: "94.2M" }, desktop: { sub: "58%", main: "54.6M" }, mom: 1.8, yoy: 6.2, source: "Direct" },
+    { domain: "btc.com", visits: { sub: "0.5%", main: "82.5M" }, desktop: { sub: "60%", main: "49.5M" }, mom: -0.4, yoy: 3.1, source: "Direct" },
+    { domain: "z-mobile.com", visits: { sub: "0.4%", main: "68.9M" }, desktop: { sub: "52%", main: "35.8M" }, mom: 3.2, yoy: 9.6, source: "Organic Search" },
   ],
   Retail: [
-    { domain: "amazon.com", visits: { sub: "5.2%", main: "2.4B" }, desktop: { sub: "55%", main: "1.3B" }, mom: 2.1, yoy: 8.4, source: "Direct" },
-    { domain: "walmart.com", visits: { sub: "1.4%", main: "640M" }, desktop: { sub: "48%", main: "307M" }, mom: 1.2, yoy: 5.8, source: "Organic Search" },
-    { domain: "target.com", visits: { sub: "0.5%", main: "210M" }, desktop: { sub: "52%", main: "109M" }, mom: -1.6, yoy: 2.4, source: "Direct" },
+    { domain: "zentro.com", visits: { sub: "5.2%", main: "2.4B" }, desktop: { sub: "55%", main: "1.3B" }, mom: 2.1, yoy: 8.4, source: "Direct" },
+    { domain: "valumart.com", visits: { sub: "1.4%", main: "640M" }, desktop: { sub: "48%", main: "307M" }, mom: 1.2, yoy: 5.8, source: "Organic Search" },
+    { domain: "bullsey.com", visits: { sub: "0.5%", main: "210M" }, desktop: { sub: "52%", main: "109M" }, mom: -1.6, yoy: 2.4, source: "Direct" },
   ],
   Entertainment: [
-    { domain: "netflix.com", visits: { sub: "1.0%", main: "420M" }, desktop: { sub: "65%", main: "273M" }, mom: 0.8, yoy: 4.5, source: "Direct" },
-    { domain: "disneyplus.com", visits: { sub: "0.3%", main: "118M" }, desktop: { sub: "58%", main: "68M" }, mom: -2.1, yoy: -5.2, source: "Direct" },
-    { domain: "hulu.com", visits: { sub: "0.2%", main: "82M" }, desktop: { sub: "60%", main: "49M" }, mom: 1.5, yoy: null, source: "Direct" },
+    { domain: "streamr.com", visits: { sub: "1.0%", main: "420M" }, desktop: { sub: "65%", main: "273M" }, mom: 0.8, yoy: 4.5, source: "Direct" },
+    { domain: "magicplus.com", visits: { sub: "0.3%", main: "118M" }, desktop: { sub: "58%", main: "68M" }, mom: -2.1, yoy: -5.2, source: "Direct" },
+    { domain: "vidu.com", visits: { sub: "0.2%", main: "82M" }, desktop: { sub: "60%", main: "49M" }, mom: 1.5, yoy: null, source: "Direct" },
   ],
   "Software & Development": [
-    { domain: "github.com", visits: { sub: "1.2%", main: "510M" }, desktop: { sub: "78%", main: "397M" }, mom: 3.4, yoy: 14.2, source: "Direct" },
-    { domain: "stackoverflow.com", visits: { sub: "0.8%", main: "318M" }, desktop: { sub: "82%", main: "260M" }, mom: -2.4, yoy: -8.6, source: "Organic Search" },
-    { domain: "gitlab.com", visits: { sub: "0.2%", main: "62M" }, desktop: { sub: "75%", main: "46M" }, mom: 1.1, yoy: 4.2, source: "Direct" },
+    { domain: "codehub.com", visits: { sub: "1.2%", main: "510M" }, desktop: { sub: "78%", main: "397M" }, mom: 3.4, yoy: 14.2, source: "Direct" },
+    { domain: "devoverflow.com", visits: { sub: "0.8%", main: "318M" }, desktop: { sub: "82%", main: "260M" }, mom: -2.4, yoy: -8.6, source: "Organic Search" },
+    { domain: "repolab.com", visits: { sub: "0.2%", main: "62M" }, desktop: { sub: "75%", main: "46M" }, mom: 1.1, yoy: 4.2, source: "Direct" },
   ],
 };
 
@@ -63,10 +63,10 @@ export function BenchmarkTable() {
       <div className="container-1200">
         <div className="text-center mb-[90px]">
           <h2 className="font-semibold uppercase tracking-[-1.84px] text-[46px] leading-[100%] text-brand-black max-xl:text-[36px] max-xl:tracking-[-1.44px]">
-            Benchmark your website against industry leaders
+            Benchmark your platform against industry leaders
           </h2>
           <p className="mt-8 text-[18px] font-medium leading-[150%] tracking-[-0.36px] text-core-dark-grey">
-            Get a full analysis for any website.
+            Get a full breakdown for any platform.
           </p>
         </div>
 
@@ -120,7 +120,7 @@ export function BenchmarkTable() {
         </div>
 
         <div className="flex justify-center mt-8">
-          <CtaButton variant="black">Try free for 7 days</CtaButton>
+          <CtaButton variant="black">Get free for 7 days</CtaButton>
         </div>
       </div>
     </section>

@@ -17,7 +17,7 @@ export function StickyHeader() {
       <div className="container-1200 flex items-center justify-between">
         <SemrushLogo />
         <CtaButton variant="black" className="!h-[53px] !min-h-[53px] !text-[14px] !tracking-[-0.28px]">
-          Try free for 7 days
+          Get free for 7 days
         </CtaButton>
       </div>
     </header>

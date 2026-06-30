@@ -8,7 +8,7 @@ export function TestimonialSection() {
             <div>
               <div className="text-[48px] leading-none text-lavender font-semibold">"</div>
               <p className="mt-2 text-[22px] lg:text-[26px] leading-[1.35] font-semibold text-white">
-                Running a $2.3B marketplace means you can't afford to guess. We need clarity across markets to make the right calls fast."
+                Running a $2.3B marketplace means you can't afford to guess. We need clarity across regions to make the right calls fast."
               </p>
             </div>
             <div className="mt-8 flex items-center gap-3">
@@ -16,8 +16,8 @@ export function TestimonialSection() {
                 <div className="w-full h-full bg-gradient-to-br from-amber-600 to-amber-800 rounded-full" />
               </div>
               <div>
-                <div className="text-sm font-bold text-white">Sascha Weber</div>
-                <div className="text-[13px] text-text-disabled">Head of SEO, Chrono24</div>
+                <div className="text-sm font-bold text-white">Marcus Werber</div>
+                <div className="text-[13px] text-text-disabled">Head of SEO, Watchio42</div>
               </div>
             </div>
           </div>
