@@ -63,10 +63,10 @@ export function BenchmarkTable() {
       <div className="container-1200">
         <div className="text-center mb-[90px]">
           <h2 className="font-semibold uppercase tracking-[-1.84px] text-[46px] leading-[100%] text-brand-black max-xl:text-[36px] max-xl:tracking-[-1.44px]">
-            Benchmark your website against industry leaders
+            Benchmark your platform against industry leaders
           </h2>
           <p className="mt-8 text-[18px] font-medium leading-[150%] tracking-[-0.36px] text-core-dark-grey">
-            Get a full analysis for any website.
+            Get a full breakdown for any platform.
           </p>
         </div>
 
@@ -120,7 +120,7 @@ export function BenchmarkTable() {
         </div>
 
         <div className="flex justify-center mt-8">
-          <CtaButton variant="black">Try free for 7 days</CtaButton>
+          <CtaButton variant="black">Get free for 7 days</CtaButton>
         </div>
       </div>
     </section>

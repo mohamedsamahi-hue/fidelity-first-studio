@@ -2,10 +2,10 @@ export function HeroMockup() {
   return (
     <div className="relative rounded-2xl bg-white shadow-[0_20px_60px_-20px_rgba(0,0,0,0.18)] p-5 border border-border-soft">
       <div className="flex items-center gap-2 mb-4">
-        <h3 className="text-lg font-bold text-brand-black flex-1">Traffic channel trend</h3>
+        <h3 className="text-lg font-bold text-brand-black flex-1">Channel traffic mixer</h3>
         <div className="flex items-center gap-2 rounded-full border border-border-soft px-3 py-1.5">
           <span className="w-5 h-5 rounded-full bg-brand-orange text-white text-xs flex items-center justify-center font-bold">+</span>
-          <span className="text-sm text-brand-black">yourcompetitor.com</span>
+          <span className="text-sm text-brand-black">yourcontender.com</span>
         </div>
       </div>
       <div className="grid grid-cols-[2fr_1fr] gap-4">

@@ -1,4 +1,4 @@
-const logos = ["amazon", "TikTok", "shopify", "Grammarly", "Microsoft", "airbnb", "NETFLIX"];
+const logos = ["zentro", "ClipUp", "stocket", "Wordlight", "Pixelsoft", "nestio", "STREAMR"];
 
 export function TrustedLogos() {
   return (
@@ -7,7 +7,7 @@ export function TrustedLogos() {
         <div className="flex items-center gap-[10px]">
           <div className="flex-1 h-px bg-core-dark-grey/30" />
           <p className="font-factor text-[16px] font-medium leading-[16px] tracking-[-0.32px] text-core-dark-grey whitespace-nowrap">
-            26M marketers already use Semrush
+            26M marketers already use Trafliq
           </p>
           <div className="flex-1 h-px bg-core-dark-grey/30" />
         </div>

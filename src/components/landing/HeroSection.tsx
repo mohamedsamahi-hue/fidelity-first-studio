@@ -12,15 +12,15 @@ export function HeroSection() {
         <div className="mt-[87px] flex items-center justify-between gap-3 max-lg:flex-col max-lg:mt-10 max-lg:gap-[50px] max-lg:text-center">
           <div className="w-full max-w-[580px]">
             <h1 className="text-[64px] font-semibold leading-[110%] tracking-[-2.56px] text-brand-black max-xl:text-[56px] max-xl:tracking-[-1.6px] max-sm:text-[40px]">
-              Analyze your competitors' website traffic
+              Measure your rivals' inbound website traffic
             </h1>
             <p className="mt-6 text-[24px] font-medium leading-[120%] tracking-[-0.48px] text-core-dark-grey max-w-[460px] max-lg:mx-auto max-lg:text-[18px]">
-              Break down any website's performance across channels, pages, and regions — then beat them at their own game.
+              Decode any platform's performance across channels, pages, and regions — then top them at their own arena.
             </p>
             <div className="mt-8">
-              <CtaButton>Try free for 7 days</CtaButton>
+              <CtaButton>Get free for 7 days</CtaButton>
               <p className="mt-4 text-[14px] font-medium leading-[150%] tracking-[-0.28px] text-core-dark-grey">
-                Unlimited access to all Traffic &amp; Market tools
+                Unlimited access to all Insight &amp; Market suites
               </p>
             </div>
           </div>
