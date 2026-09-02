@@ -14,7 +14,7 @@ export function TrustedLogos() {
       </div>
 
       <div className="mt-8 marquee-mask">
-        <div className="flex w-max animate-marquee gap-10 sm:gap-16 pr-10 sm:pr-16 hover:[animation-play-state:paused]">
+        <div className="flex w-max animate-marquee hover:[animation-play-state:paused]">
           {[0, 1].map((dup) => (
             <div key={dup} className="flex shrink-0 items-center gap-10 sm:gap-16 pr-10 sm:pr-16" aria-hidden={dup === 1}>
               {logos.map((l) => (
