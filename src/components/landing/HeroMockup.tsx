@@ -1,6 +1,7 @@
 export function HeroMockup() {
   return (
-    <div className="relative rounded-2xl bg-white shadow-[0_20px_60px_-20px_rgba(0,0,0,0.18)] p-5 border border-border-soft">
+    <div className="relative rounded-[14px] bg-white p-6 sm:p-7">
+
       <div className="flex items-center gap-2 mb-4">
         <h3 className="text-lg font-bold text-brand-black flex-1">Channel traffic mixer</h3>
         <div className="flex items-center gap-2 rounded-full border border-border-soft px-3 py-1.5">

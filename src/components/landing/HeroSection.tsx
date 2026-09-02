@@ -25,11 +25,12 @@ export function HeroSection() {
             </div>
           </div>
           <div className="w-full max-w-[680px] max-xl:max-w-[600px] max-lg:max-w-[710px]">
-            <div className="rounded-[12px] border-[1.3px] border-white bg-[linear-gradient(0deg,rgba(108,110,121,0.1)_0%,rgba(209,210,213,0.1)_100%)] backdrop-blur-[26px] p-3">
-              <div className="bg-white rounded-[6px] overflow-hidden">
+            <div className="rounded-[20px] border-[1.3px] border-white bg-[linear-gradient(0deg,rgba(108,110,121,0.1)_0%,rgba(209,210,213,0.1)_100%)] backdrop-blur-[26px] p-3">
+              <div className="bg-white rounded-[14px]">
                 <HeroMockup />
               </div>
             </div>
+
           </div>
         </div>
       </div>

@@ -1,7 +1,10 @@
+import { useFadeUp } from "@/hooks/use-fade-up";
+
 export function DataStats() {
+  const ref = useFadeUp<HTMLDivElement>();
   return (
     <section className="bg-white pt-[60px] pb-[120px]">
-      <div className="container-1200">
+      <div ref={ref} className="container-1200 fade-up">
         <h2 className="text-left font-semibold uppercase tracking-[-1.84px] text-[46px] leading-[100%] text-brand-black mb-[60px] max-xl:text-[36px] max-xl:tracking-[-1.44px]">
           Data you can trust to drive results
         </h2>
