@@ -1,7 +1,10 @@
+import { useFadeUp } from "@/hooks/use-fade-up";
+
 export function TestimonialSection() {
+  const ref = useFadeUp<HTMLDivElement>();
   return (
     <section className="bg-white py-[60px]">
-      <div className="container-1200">
+      <div ref={ref} className="container-1200 fade-up">
         <div className="grid lg:grid-cols-[2fr_3fr] rounded-2xl overflow-hidden">
           {/* Quote side */}
           <div className="bg-brand-black text-white p-10 lg:p-12 flex flex-col justify-between min-h-[320px]">

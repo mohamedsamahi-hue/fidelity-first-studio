@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { CtaButton } from "./CtaButton";
+import { useFadeUp } from "@/hooks/use-fade-up";
 
 const tabs = ["Education", "Telecom", "Retail", "Entertainment", "Software & Development"];
 
@@ -58,9 +59,10 @@ function Trend({ value }: { value: number | null }) {
 export function BenchmarkTable() {
   const [active, setActive] = useState("Education");
   const rows = data[active];
+  const ref = useFadeUp<HTMLDivElement>();
   return (
     <section className="bg-white pt-[120px] pb-[60px] text-left">
-      <div className="container-1200">
+      <div ref={ref} className="container-1200 fade-up">
         <div className="text-center mb-[90px]">
           <h2 className="font-semibold uppercase tracking-[-1.84px] text-[46px] leading-[100%] text-brand-black max-xl:text-[36px] max-xl:tracking-[-1.44px]">
             Benchmark your platform against industry leaders

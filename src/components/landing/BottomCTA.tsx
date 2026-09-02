@@ -1,9 +1,12 @@
 import { CtaButton } from "./CtaButton";
 
+import { useFadeUp } from "@/hooks/use-fade-up";
+
 export function BottomCTA() {
+  const ref = useFadeUp<HTMLDivElement>();
   return (
     <section className="cta-dark-bg pt-[90px] pb-[140px] text-center">
-      <div className="container-1200">
+      <div ref={ref} className="container-1200 fade-up">
         <h2 className="text-white font-semibold uppercase tracking-[-1.84px] text-[46px] leading-[100%] max-w-3xl mx-auto max-xl:text-[36px] max-xl:tracking-[-1.44px]">
           Measure rival platform traffic now
         </h2>
